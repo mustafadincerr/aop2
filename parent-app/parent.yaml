@@ -10,7 +10,9 @@ spec:
   source:
     repoURL: https://github.com/mustafadincerr/aop2.git
     targetRevision: HEAD
-    path: parent-app
+    path: parent-app/application
+    directory:
+      recurse: true
   project: default
   syncPolicy:
     automated:

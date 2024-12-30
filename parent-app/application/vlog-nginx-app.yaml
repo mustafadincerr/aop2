@@ -11,6 +11,7 @@ spec:
     repoURL: https://github.com/mustafadincerr/aop2.git
     targetRevision: HEAD
     path: myapp1/vlog-nginx
+    
   project: default
   syncPolicy:
     automated:
