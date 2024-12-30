@@ -1,0 +1,22 @@
+replicaCount: 1
+
+image:
+  repository: my-user-service
+  tag: v1.0.0
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 8080
+
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "500m"
+  limits:
+    memory: "256Mi"
+    cpu: "1000m"
+
+nodeSelector: {}
+tolerations: []
+affinity: {}

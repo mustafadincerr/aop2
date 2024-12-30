@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: blog-nginx
+  namespace: vlog-app
+spec:
+  destination:
+    namespace: vlog-app
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/mustafadincerr/aop2.git
+    targetRevision: HEAD
+    path: myapp1/vlog-nginx
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
