@@ -2,13 +2,13 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: parent-app
-  namespace: vlog-app
+  namespace: argocd
 spec:
   destination:
     namespace: vlog-app
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://github.com/username/single-repo.git
+    repoURL: https://github.com/mustafadincerr/aop2.git
     targetRevision: HEAD
     path: parent-app
   project: default
