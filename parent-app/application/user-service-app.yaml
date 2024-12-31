@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/mustafadincerr/aop2.git
     targetRevision: HEAD
-    path: user-service
+    path: my-app1/user-service/
   project: default
   syncPolicy:
     automated:
